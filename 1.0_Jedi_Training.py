@@ -1,7 +1,6 @@
 '''
 1.0 Jedi Training (17pts)  Name: Logan Knisley
 
-
 1. Define Forking (1pt): Forking is the term for creating a new repo based off an existing repository.
 
 2. Define Cloning (1pt): Cloning is the term for downloading a copy of a repo onto your system.
