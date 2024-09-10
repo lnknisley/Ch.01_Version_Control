@@ -2,20 +2,20 @@
 1.0 Jedi Training (17pts)  Name: Logan Knisley
 
 
-1. Define Forking (1pt): Forking is the name for creating a new repo based off an existing repository that can later be merged
+1. Define Forking (1pt): Forking is the term for creating a new repo based off an existing repository.
 
-2. Define Cloning (1pt): Cloning is the name for downloading a copy of a repo onto your system
+2. Define Cloning (1pt): Cloning is the term for downloading a copy of a repo onto your system.
 
-3. Define Branching (1pt): Branching is the main foundation of software teamwork as it describes the process of creating branches of code based off of a master branch (like the trunk in a tree)
+3. Define Branching (1pt): Branching is the term for the creation of repos that spread from a
+ main/master branch (akin to the branches of a tree coming from a tree's truck, hence the term's name).
 
-4. Define Committing (1pt): Commiting is the name for pushing new code into an existing repo
+4. Define Committing (1pt): Commiting is the name for pushing new code into an existing repo.
 
-5. Define Merging (1pt): Merging is the merging a forked branch into the master repository
+5. Define Merging (1pt): Merging is the merging the changes of a forked branch into the master repository.
 
-6. Define Pushing (1pt): Pushing the name for pushing changes into a codebase
+6. Define Pushing (1pt): Pushing is the name for pushing changes into a codebase. Force pushing is pushing without any need for approval.
 
-7. Define Pull Request (1pt): A pull request is a request for someone's changes to be merged into the master branch. This could also be called a merge request.
-
+7. Define Pull Request (1pt): A pull request is a request for someone's changes to be merged into the master branch.
 
 8. TURTORIAL ART (10pts.)
 
@@ -26,10 +26,10 @@ The last line keeps the window open until you click to close.
 Turtle Documentation: https://docs.python.org/3.3/library/turtle.html?highlight=turtle
 '''
 import turtle
-
 snake = turtle.Turtle()
 
 screen = turtle.Screen()
+screen.screensize(200, 200)
 screen.bgcolor("#cccccc")
 
 snake.pensize(8)
@@ -48,7 +48,7 @@ def zig(x):
   else:
     snake.goto(snake.xcor() - 20, snake.ycor() + 20)
     
-def zag(x):
+def zag():
   snake.pendown()
   snake.goto(snake.xcor() - 40, snake.ycor() - 20)
     
@@ -101,7 +101,9 @@ for j in ux:
   snake.pendown()
   
   for cir in circle:
-    zag(cir)
+    zag()
 
-snake.write('Logan Knisley',font=("Times New Roman", 16, "normal")) # signs your name to your art
+snake.penup()
+snake.goto(0, 200)
+snake.write('Logan Knisley',font=("Arial", 16, "normal")) # signs your name to your art
 turtle.exitonclick() #Keeps pycharm window open so we can see the drawing
